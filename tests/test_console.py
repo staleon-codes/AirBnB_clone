@@ -28,7 +28,7 @@ class TestConstructor(unittest.TestCase):
         with patch('sys.stdout', new=StringIO()) as f:
             HBNBCommand().onecmd("help quit")
             self.assertEqual(
-                """This Quit command to exit the program.""", f.getvalue()[:-1])
+                """Quit command to exit the program.""", f.getvalue()[:-1])
         with patch('sys.stdout', new=StringIO()) as f:
             HBNBCommand().onecmd("help EOF")
             self.assertEqual("EOF command to exit the program.",
