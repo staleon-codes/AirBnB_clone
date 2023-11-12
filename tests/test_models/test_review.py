@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Unittest for base model
+"""Unittests for basemodel class.
 """
 import unittest
 from models.review import Review

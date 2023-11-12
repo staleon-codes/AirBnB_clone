@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-test module
+test module for storage.
 """
 import unittest
 from models.engine.file_storage import FileStorage
@@ -11,7 +11,7 @@ import os
 
 class TestConstructor(unittest.TestCase):
     """
-    test class
+    test class for testing
     """
     fs = FileStorage()
 

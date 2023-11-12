@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""city model."""
+"""city model as subclass of basemodel rep city information."""
 from models.base_model import BaseModel
 
 

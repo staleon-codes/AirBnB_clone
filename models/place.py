@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""city model."""
+"""place model as a subclass of basemodel."""
 from models.base_model import BaseModel
 
 
 class Place(BaseModel):
-    """city class."""
+    """Place class."""
 
     city_id = ""  # City.id
     user_id = ""  # User.id

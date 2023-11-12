@@ -1,6 +1,6 @@
 #!usr/bin/python3
 
-""" File storage model """
+""" This is the File storage model handling storage and serialization """
 import json
 from models.base_model import BaseModel
 from models.user import User
@@ -14,7 +14,7 @@ from models.review import Review
 class FileStorage():
 
     """
-    FileStorage class
+    This represents FileStorage class
     """
 
     __file_path = "file.json"
@@ -31,20 +31,20 @@ class FileStorage():
 
     def all(self):
         """
-        Returns all objects in BaseModel class representing format
+        This Returns all objects in BaseModel class representing format
         """
         return self.__objects
 
     def new(self, obj):
         """
-        Add obj to objects
+        This is to Add obj to objects
         """
         self.__objects[f"{obj.__class__.__name__}.{obj.id}"] = obj
 
     def save(self):
         """"
-        Serialize objects in __objects to json objects and
-        save them in file.json file format
+        This Serializes objects in __objects to json objects and
+        saves them in file.json file format
         """
         json_objs = {}
         for key, val in self.__objects.items():
@@ -54,7 +54,7 @@ class FileStorage():
 
     def reload(self):
         """
-        Deserializes the JSON objects in file.json
+        to Deserializes the JSON objects in file.json
         """
         try:
             with open(self.__file_path, "r", encoding='utf-8') as f:
