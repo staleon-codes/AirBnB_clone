@@ -65,7 +65,9 @@ class FileStorage():
                 if val["_class"] in self._models.keys():
                     self._objects[key] = self.models[val["class_"]](
                         **val)
+                    
         except FileNotFoundError:
             pass
         except Exception as e:
             pass
+            
