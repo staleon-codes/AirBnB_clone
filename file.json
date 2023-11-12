@@ -61,5 +61,145 @@
         "created_at": "2023-08-13T12:00:00",
         "updated_at": "2023-08-13T13:30:00",
         "__class__": "BaseModel"
+    },
+    "Amenity.592e4f08-8075-4667-b8a6-b8a6b2b96d74": {
+        "id": "592e4f08-8075-4667-b8a6-b8a6b2b96d74",
+        "created_at": "2023-11-12T14:00:22.965482",
+        "updated_at": "2023-11-12T14:00:22.965486",
+        "__class__": "Amenity"
+    },
+    "City.ef77ccf1-8456-449a-be39-63fb084b7931": {
+        "id": "ef77ccf1-8456-449a-be39-63fb084b7931",
+        "created_at": "2023-11-12T14:00:22.969224",
+        "updated_at": "2023-11-12T14:00:22.969226",
+        "__class__": "City"
+    },
+    "Place.9f0608aa-6b3b-4281-a98c-6dc711533af1": {
+        "id": "9f0608aa-6b3b-4281-a98c-6dc711533af1",
+        "created_at": "2023-11-12T14:00:23.054615",
+        "updated_at": "2023-11-12T14:00:23.054620",
+        "__class__": "Place"
+    },
+    "Review.bb5f946d-b90b-42a5-8a0a-73b8ca751aaf": {
+        "id": "bb5f946d-b90b-42a5-8a0a-73b8ca751aaf",
+        "created_at": "2023-11-12T14:00:23.056903",
+        "updated_at": "2023-11-12T14:00:23.056906",
+        "__class__": "Review"
+    },
+    "State.a32be049-64c8-480a-87bb-f8044dea4b5e": {
+        "id": "a32be049-64c8-480a-87bb-f8044dea4b5e",
+        "created_at": "2023-11-12T14:00:23.059012",
+        "updated_at": "2023-11-12T14:00:23.059015",
+        "__class__": "State"
+    },
+    "User.4ca586c3-53c6-4bb7-92a3-11c4903d4849": {
+        "id": "4ca586c3-53c6-4bb7-92a3-11c4903d4849",
+        "created_at": "2023-11-12T14:00:23.061214",
+        "updated_at": "2023-11-12T14:00:23.061216",
+        "__class__": "User"
+    },
+    "BaseModel.3be1f6d7-5be2-4e6b-911a-6053cbec0ffb": {
+        "id": "3be1f6d7-5be2-4e6b-911a-6053cbec0ffb",
+        "created_at": "2023-11-12T14:01:21.257804",
+        "updated_at": "2023-11-12T14:01:21.259153",
+        "name": "My First Model",
+        "my_number": 90,
+        "__class__": "BaseModel"
+    },
+    "Amenity.d4832527-0baf-43c8-a035-27fb8e34e5dd": {
+        "id": "123-123-123",
+        "created_at": "2023-11-12T14:02:12.858424",
+        "updated_at": "2023-11-12T14:02:12.861565",
+        "name": "Emad",
+        "__class__": "Amenity"
+    },
+    "Amenity.38b68520-f03f-4d9e-9237-0ca7faf698c4": {
+        "id": "38b68520-f03f-4d9e-9237-0ca7faf698c4",
+        "created_at": "2023-11-12T14:02:12.861090",
+        "updated_at": "2023-11-12T14:02:12.861094",
+        "__class__": "Amenity"
+    },
+    "City.20701f17-eaec-49d5-9544-96e0e0530520": {
+        "id": "123-123-123",
+        "created_at": "2023-11-12T14:02:42.453409",
+        "updated_at": "2023-11-12T14:02:42.456632",
+        "name": "Body",
+        "__class__": "City"
+    },
+    "City.cba41ebc-6b92-41f2-b686-6a232af0e2cd": {
+        "id": "cba41ebc-6b92-41f2-b686-6a232af0e2cd",
+        "created_at": "2023-11-12T14:02:42.456558",
+        "updated_at": "2023-11-12T14:02:42.456560",
+        "__class__": "City"
+    },
+    "Place.0251ae6c-d8b3-440b-9f02-3eabbe23adfe": {
+        "id": "456-456-456",
+        "created_at": "2023-11-12T14:03:11.855148",
+        "updated_at": "2023-11-12T14:03:11.857499",
+        "name": "Emad",
+        "city_id": "city-123",
+        "user_id": "user-456",
+        "description": "A luxurious apartment",
+        "number_rooms": 3,
+        "number_bathrooms": 2,
+        "max_guest": 4,
+        "price_by_night": 200,
+        "latitude": 40.7128,
+        "longitude": -74.006,
+        "amenity_ids": [
+            "amenity-1",
+            "amenity-2"
+        ],
+        "__class__": "Place"
+    },
+    "Place.419362c7-9936-4a15-8a47-4c40bcad98a3": {
+        "id": "419362c7-9936-4a15-8a47-4c40bcad98a3",
+        "created_at": "2023-11-12T14:03:11.857225",
+        "updated_at": "2023-11-12T14:03:11.857227",
+        "__class__": "Place"
+    },
+    "Review.7976cdb5-8a34-4163-aa33-8648799c75d4": {
+        "id": "7976cdb5-8a34-4163-aa33-8648799c75d4",
+        "created_at": "2023-11-12T14:03:39.261343",
+        "updated_at": "2023-11-12T14:03:39.263688",
+        "place_id": "place-123",
+        "user_id": "user-456",
+        "text": "Updated review text",
+        "__class__": "Review"
+    },
+    "Review.f782a86e-563f-4fa8-8334-66bc34f0e9db": {
+        "id": "f782a86e-563f-4fa8-8334-66bc34f0e9db",
+        "created_at": "2023-11-12T14:03:39.263573",
+        "updated_at": "2023-11-12T14:03:39.263595",
+        "__class__": "Review"
+    },
+    "State.dc1c2f11-c639-4e9a-bbb7-b12fd260f78f": {
+        "id": "dc1c2f11-c639-4e9a-bbb7-b12fd260f78f",
+        "created_at": "2023-11-12T14:04:06.158439",
+        "updated_at": "2023-11-12T14:04:06.161065",
+        "name": "Aswan",
+        "__class__": "State"
+    },
+    "State.4305ba52-d5b5-43f7-8c98-47a774a5f631": {
+        "id": "4305ba52-d5b5-43f7-8c98-47a774a5f631",
+        "created_at": "2023-11-12T14:04:06.160365",
+        "updated_at": "2023-11-12T14:04:06.160369",
+        "__class__": "State"
+    },
+    "User.ca8e6f29-2968-4a90-b33f-2970b692228e": {
+        "id": "ca8e6f29-2968-4a90-b33f-2970b692228e",
+        "created_at": "2023-11-12T14:04:32.257922",
+        "updated_at": "2023-11-12T14:04:32.261735",
+        "email": "updated@example.com",
+        "password": "EL0mda",
+        "first_name": "Emad",
+        "last_name": "Anwer",
+        "__class__": "User"
+    },
+    "User.9d6a933a-7d0b-4899-b84e-d45861f90c9d": {
+        "id": "9d6a933a-7d0b-4899-b84e-d45861f90c9d",
+        "created_at": "2023-11-12T14:04:32.261057",
+        "updated_at": "2023-11-12T14:04:32.261080",
+        "__class__": "User"
     }
 }
