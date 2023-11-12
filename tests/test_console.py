@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-test module
+test module HNBCcommand and relatated models.
 """
 import unittest
 from console import HBNBCommand
