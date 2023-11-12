@@ -39,7 +39,7 @@ class FileStorage():
         """
         This is to Add obj to objects
         """
-        self.__objects[f"{obj.__class__.__name__}.{obj.id}"] = obj
+        self._objects[f"{obj.class.name_}.{obj.id}"] = obj
 
     def save(self):
         """"
@@ -61,9 +61,9 @@ class FileStorage():
                 json_objs = json.load(f)
 
             for key, val in json_objs.items():
-                constractor = val["__class__"]
-                if val["__class__"] in self.__models.keys():
-                    self.__objects[key] = self.__models[val["__class__"]](
+                constractor = val["_class_"]
+                if val["_class"] in self._models.keys():
+                    self._objects[key] = self.models[val["class_"]](
                         **val)
         except FileNotFoundError:
             pass
