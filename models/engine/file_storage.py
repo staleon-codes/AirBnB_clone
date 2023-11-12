@@ -1,34 +1,32 @@
 #!usr/bin/python3
 
-""" This is a File storage model """
+""" This is the File storage model """
 import json
 from models.base_model import BaseModel
 from models.user import User
 from models.state import State
-from models.place import Place
-from models.review import Review
 from models.city import City
 from models.amenity import Amenity
-
+from models.place import Place
+from models.review import Review
 
 
 class FileStorage():
 
     """
-    This is a FileStorage class
+    This represents FileStorage class
     """
 
     __file_path = "file.json"
     __objects = {}
     __models = {
-        'BaseModel': BaseModel,
         'User': User,
+        'BaseModel': BaseModel,
         'State': State,
-        'Place': Place,
-        'Review': Review
         'City': City,
         'Amenity': Amenity,
-        
+        'Place': Place,
+        'Review': Review
     }
 
     def all(self):
@@ -45,8 +43,8 @@ class FileStorage():
 
     def save(self):
         """"
-        To Serialize objects in __objects to json objects and
-        to save them in file.json file format
+        This Serializes objects in __objects to json objects and
+        saves them in file.json file format
         """
         json_objs = {}
         for key, val in self.__objects.items():
@@ -56,7 +54,7 @@ class FileStorage():
 
     def reload(self):
         """
-        To Deserializes the JSON objects in file.json
+        to Deserializes the JSON objects in file.json
         """
         try:
             with open(self.__file_path, "r", encoding='utf-8') as f:
