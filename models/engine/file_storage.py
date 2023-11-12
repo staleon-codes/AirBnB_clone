@@ -1,6 +1,6 @@
 #!usr/bin/python3
 
-""" File storage model """
+""" File storagemodel. """
 import json
 from models.base_model import BaseModel
 from models.user import User
@@ -31,7 +31,7 @@ class FileStorage():
 
     def all(self):
         """
-        Returns all objects in BaseModel class representing format
+        Returns objects in BaseModel class.
         """
         return self.__objects
 
