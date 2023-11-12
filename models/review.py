@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""review model."""
+"""review model as asublass of basemodel for review info."""
 from models.base_model import BaseModel
 
 
