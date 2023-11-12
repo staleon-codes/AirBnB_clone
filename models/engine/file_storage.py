@@ -1,6 +1,6 @@
 #!usr/bin/python3
 
-""" This is the File storage model """
+""" This is the File storage model handling storage and serialization """
 import json
 from models.base_model import BaseModel
 from models.user import User
