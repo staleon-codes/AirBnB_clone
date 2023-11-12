@@ -1,6 +1,6 @@
 #!usr/bin/python3
 
-""" User model """
+""" User model representing user information """
 from models.base_model import BaseModel
 
 
