@@ -1,50 +1,52 @@
 #!usr/bin/python3
 
-""" File storage model """
+""" This is a File storage model """
 import json
 from models.base_model import BaseModel
 from models.user import User
 from models.state import State
-from models.city import City
-from models.amenity import Amenity
 from models.place import Place
 from models.review import Review
+from models.city import City
+from models.amenity import Amenity
+
 
 
 class FileStorage():
 
     """
-    FileStorage class
+    This is a FileStorage class
     """
 
     __file_path = "file.json"
     __objects = {}
     __models = {
-        'User': User,
         'BaseModel': BaseModel,
+        'User': User,
         'State': State,
-        'City': City,
-        'Amenity': Amenity,
         'Place': Place,
         'Review': Review
+        'City': City,
+        'Amenity': Amenity,
+        
     }
 
     def all(self):
         """
-        Returns all objects in BaseModel class representing format
+        This Returns all objects in BaseModel class representing format
         """
         return self.__objects
 
     def new(self, obj):
         """
-        Add obj to objects
+        This is to Add obj to objects
         """
         self.__objects[f"{obj.__class__.__name__}.{obj.id}"] = obj
 
     def save(self):
         """"
-        Serialize objects in __objects to json objects and
-        save them in file.json file format
+        To Serialize objects in __objects to json objects and
+        to save them in file.json file format
         """
         json_objs = {}
         for key, val in self.__objects.items():
@@ -54,7 +56,7 @@ class FileStorage():
 
     def reload(self):
         """
-        Deserializes the JSON objects in file.json
+        To Deserializes the JSON objects in file.json
         """
         try:
             with open(self.__file_path, "r", encoding='utf-8') as f:
