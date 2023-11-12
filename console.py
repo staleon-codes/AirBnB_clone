@@ -13,7 +13,7 @@ from models import storage
 
 
 class HBNBCommand(cmd.Cmd):
-    """command interpreter class."""
+    """This represents a command interpreter class"""
 
     prompt = '(hbnb) '
     classes_dict = {"BaseModel": BaseModel, "State": State, "State": State,
@@ -21,19 +21,19 @@ class HBNBCommand(cmd.Cmd):
                     "Place": Place, "Review": Review, "User": User}
 
     def do_EOF(self, line):
-        """EOF command to exit the program."""
+        """End Of File EOF command to end the program"""
         return True
 
     def do_quit(self, line):
-        """Quit command to exit the program."""
+        """Quit command is to exit the program"""
         return True
 
     def emptyline(self):
-        """Empty line."""
+        """this is an Empty Line"""
         pass
 
     def do_create(self, line):
-        """Creates a new instance of BaseModel, saves it"""
+        """This Creates a new instance of the BaseModel and saves it"""
         if line == "":
             print("** class name missing **")
             return
@@ -47,8 +47,7 @@ class HBNBCommand(cmd.Cmd):
                 return
 
     def do_show(self, line):
-        """Print the string representation of an instance
-        based on the class name and id."""
+        """Output the string representation of an object using its class name and ID"""
         line_vactor = line.split()
         if line_vactor == []:
             print("** class name missing **")
@@ -68,7 +67,7 @@ class HBNBCommand(cmd.Cmd):
             return
 
     def do_destroy(self, line):
-        """Delete an instance based on the class name and id."""
+        """To Deletes an instance based on the class name and id"""
         line_vactor = line.split()
         if line_vactor == []:
             print("** class name missing **")
@@ -90,7 +89,7 @@ class HBNBCommand(cmd.Cmd):
             return
 
     def do_all(self, line):
-        """Print all string representation of all instances"""
+        """Prints all the string representation of all the instances"""
         line_vactor = line.split()
 
         objects_string_representation = []
@@ -111,7 +110,7 @@ class HBNBCommand(cmd.Cmd):
         print(objects_string_representation)
 
     def do_update(self, line):
-        """Updates an instance based on the class name and id"""
+        """This Updates an instance based on the class name and id"""
         line_vector = line.split()
         vector_len = len(line_vector)
         if line_vector == []:
@@ -142,7 +141,7 @@ class HBNBCommand(cmd.Cmd):
                 objects_class[key].save()
 
     def do_count(self, line):
-        """Display count of instances specified"""
+        """This Displays count of specified instances"""
         if line in HBNBCommand.classes_dict:
             count = 0
             for key, objs in storage.all().items():
@@ -153,7 +152,7 @@ class HBNBCommand(cmd.Cmd):
             print("** class doesn't exist **")
 
     def default(self, line):
-        """Handle Cmd methods."""
+        """To Handle Cmd methods"""
         line_vector = line.split('.')
         class_argument = line_vector[0]
 
