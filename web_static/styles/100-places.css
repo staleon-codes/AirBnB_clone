@@ -111,15 +111,13 @@ article .amenities {
 
 .article_title {
 	font-size: 30px;
-	margin: 10px auto;
-	padding: 0px;
+	margin: 10px auto; padding: 0px;
 }
 
 article ul {
 	text-align: left;
 	margin-top: 20px;
-	margin-bottom: 0px;
-	padding-bottom: 0px;
+	margin-bottom: 0px; padding-bottom: 0px;
 }
 
 article li {
@@ -156,8 +154,7 @@ article h3 {
 	background-image: url("../images/icon_group.png");
 	background-repeat: no-repeat;
 	background-position: center;
-	width: 50px;
-	height: 50px;
+	width: 50px; height: 50px;
 }
 
 .bed_icon {
@@ -165,8 +162,7 @@ article h3 {
 	background-image: url("../images/icon_bed.png");
 	background-repeat: no-repeat;
 	background-position: center;
-    width: 50px;
-    height: 50px;
+   	width: 50px; height: 50px;
 }
 
 .bath_icon {
@@ -174,36 +170,29 @@ article h3 {
 	background-image: url("../images/icon_bath.png");
 	background-repeat: no-repeat;
 	background-position: center;
-    width: 50px;
-    height: 50px;
+	width: 50px; height: 50px;
 }
 
 .tv_icon {
 	display: inline-block;
 	background-image: url("../images/icon_tv.png");
 	background-size: cover;
-	width: 20px;
-	height: 20px;
-
+	width: 20px; height: 20px;
 	margin-right: 10px;
 }
 
 .wifi_icon {
 	display: inline-block;
-    background-image: url("../images/icon_wifi.png");
-    background-size: cover;
-	width: 20px;
-    height: 20px;
-
+        background-image: url("../images/icon_wifi.png");
+        background-size: cover;
+	width: 20px; height: 20px;
 	margin-right: 10px;
 }
 
 .pet_icon {
-	display: inline-block;
+    display: inline-block;
     background-image: url("../images/icon_pets.png");
 	background-size: cover;
-    width: 20px;
-	height: 20px;
-
+    width: 20px; height: 20px;
 	margin-right: 10px;
 }
